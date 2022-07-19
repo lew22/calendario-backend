@@ -1,4 +1,4 @@
-import { Controller , Get , Post , Put, Delete, Res, HttpStatus ,Body, ConsoleLogger, Param, NotFoundException, Query
+import { Controller , Get , Post , Put, Delete, Res, HttpStatus ,Body, Param, NotFoundException, Query
 } from '@nestjs/common';
 
 import { CreateEventDTO } from './dto/evento.dto';
@@ -23,7 +23,7 @@ export class EventoController {
     async getEvents(@Res() res){
         const events = await this.eventService.getEvents();
         return res.status(HttpStatus.OK).json({
-        message:'Hello! ',
+        //message:'Hello! ',
         events})
     }
 

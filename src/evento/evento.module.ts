@@ -7,7 +7,7 @@ import {EventSchema} from './schemas/evento.schema'
     imports: [
         MongooseModule.forFeature([
             {name: 'Event', schema:EventSchema}
-        ])
+        ]),
     ],
     controllers: [EventoController],
     providers: [EventService]
