@@ -11,9 +11,9 @@ export class EventoController {
     @Post('/create')
     async createPost(@Res() res, @Body () createEventDTO: CreateEventDTO){
         const event = await this.eventService.CreateEvent(createEventDTO);
-        //console.log(createEventDTO);
+        // console.log(createEventDTO);
         res.status(HttpStatus.OK).json({
-            message: 'Product Succesfully Created',
+            message: 'Event Succesfully Created',
             event
         })
         
@@ -22,9 +22,8 @@ export class EventoController {
     @Get('/')
     async getEvents(@Res() res){
         const events = await this.eventService.getEvents();
-        return res.status(HttpStatus.OK).json({
-        //message:'Hello! ',
-        events})
+        //var datos = JSON.stringify(events);
+        return res.status(HttpStatus.OK).json({body:events});
     }
 
     @Get('/:eventId')
