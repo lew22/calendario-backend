@@ -15,7 +15,7 @@ export interface Event extends Document {
     // }
     // readonly actions: {
     //     label: String,
-    //     a11yLabel: String
+    //     a11ylabel: String
     // }
     // readonly allDay:boolean
     // readonly draggable: Boolean

@@ -1,5 +1,6 @@
 
 import {Schema} from 'mongoose'
+import mongoose from 'mongoose';
 
 export const EventSchema = new Schema({
     // name:{type: String , required: true },
@@ -17,7 +18,7 @@ export const EventSchema = new Schema({
     // },
     // actions: {
     //     label: String,
-    //     a11yLabel: String
+    //     a11ylabel: String
     // },
     // allDay: Boolean,
     // draggable: Boolean,

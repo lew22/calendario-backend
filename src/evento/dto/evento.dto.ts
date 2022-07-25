@@ -11,10 +11,7 @@ export class CreateEventDTO {
     //     primary: String,
     //     secondary: String
     // }
-    // readonly actions: {
-    //     label: String,
-    //     a11yLabel: String
-    // }
+    // readonly actions: {}
     // readonly allDay:boolean
     // readonly draggable: Boolean
     // readonly resizable :{
