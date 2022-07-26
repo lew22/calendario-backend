@@ -30,7 +30,7 @@ export class EventoController {
     @Get('/:eventId')
     async getEvent(@Res() res, @Param('eventId') eventId){
         if(mongoose.Types.ObjectId.isValid(eventId)){
-            console.log("EventId valid")
+            // console.log("EventId valid")
             const event = await this.eventService.getEvent(eventId);
             // if(!event) throw new  NotFoundException('Event does not exists')
             return res.status(HttpStatus.OK).json(event);
@@ -44,7 +44,7 @@ export class EventoController {
     @Delete('/delete/:eventId')
     async deleteEvent(@Res() res ,@Param('eventId') eventId){
         if(mongoose.Types.ObjectId.isValid(eventId)){
-            console.log("EventId valido")
+            // console.log("EventId valido")
             const eventdeleted = await this.eventService.DeleteEvent(eventId)
             // console.log(eventdeleted)
         return res.status(HttpStatus.OK).json({
@@ -66,7 +66,7 @@ export class EventoController {
     async updateEvent(@Res() res, @Body() createEventDTO: CreateEventDTO,@Param('eventId') eventId){
 
         if(mongoose.Types.ObjectId.isValid(eventId)){
-            console.log("EventId valido")
+            // console.log("EventId valido")
             const updatedEvent =await this.eventService.UpdateEvent(eventId,createEventDTO)
             // console.log(updatedEvent)
             return res.status(HttpStatus.OK).json({
