@@ -7,16 +7,12 @@ export interface Event extends Document {
     //
 
     readonly start: Date
-    // readonly end: Date
+    readonly end: Date
     readonly title: String
-    // readonly color: {
-    //     primary: String,
-    //     secondary: String
-    // }
-    // readonly actions: {
-    //     label: String,
-    //     a11ylabel: String
-    // }
+    readonly color: {
+        primary: String,
+        secondary: String
+    }
     // readonly allDay:boolean
     // readonly draggable: Boolean
     // readonly resizable :{

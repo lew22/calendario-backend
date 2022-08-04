@@ -5,12 +5,12 @@ export class CreateEventDTO {
     // readonly description: String;
     // readonly createdAt: Date;
     readonly start: Date
-    // readonly end: Date
+    readonly end: Date
     readonly title: String
-    // readonly color: {
-    //     primary: String,
-    //     secondary: String
-    // }
+    readonly color: {
+        primary: String,
+        secondary: String
+    }
     // readonly actions: {}
     // readonly allDay:boolean
     // readonly draggable: Boolean

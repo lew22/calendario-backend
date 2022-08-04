@@ -10,16 +10,12 @@ export const EventSchema = new Schema({
     //     default: Date.now
     // }
     start: Date,
-    // end: Date,
+    end: Date,
     title: {type:String , required: true},
-    // color: {
-    //     primary: String,
-    //     secondary: String
-    // },
-    // actions: {
-    //     label: String,
-    //     a11ylabel: String
-    // },
+    color: {
+        primary: String,
+        secondary: String
+    },
     // allDay: Boolean,
     // draggable: Boolean,
     // resizable :{
